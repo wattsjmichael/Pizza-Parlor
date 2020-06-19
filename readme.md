@@ -9,29 +9,31 @@
 
 _{Behavior 1 : User Clicks on food items that creates value.}_
 
-* _User Input : Click "roll"_
-* _Expected output : If 1, pass turn, alert "player two; roll!"_
+* _User Input : Click on Items
+* _Expected output : Items are stored in functions in scripts.
 
-
+_{Behavior 1 : User Clicks on submit and price is shown
+* _User Input : Click on submit
+* _Expected output : Items are hidden and price is shown
 
 
 
 ## Setup/Installation Requirements
 
 * _Navigate your broswer to https://github.com/wattsjmichael/pizza-parlor.git
-* _Download the folder from this repository, and double click on the index.html file to open it in your Browser_
+* _Download the folder from this repository, and double click on the index.html file to open it in a Browser_
 
 _OR_
 
-* _Navigate in your console to your prefered installation directory_
+* _Navigate in your console to a installation directory_
 * _Use the command git clone https://github.com/wattsjmichael/pizza-parlor.gi
-* _Open any of the files in the directory in your prefered text editor for viewing/editing_
-* _Open the index.html file in your preffered browser or text editor preview function_
+* _Open any of the files in the directory in your text editor for viewing/editing_
+* _Open the index.html file in your preferred browser or text editor preview function_
 
 
-## Known Bugs
+## Future Adds
 
-_{No known bugs}_
+_{Add multiple toppings through an array}_
 
 ## Support and contact details
 

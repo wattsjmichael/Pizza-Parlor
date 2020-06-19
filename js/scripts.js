@@ -9,7 +9,7 @@ function PizzaPie(size, protein, vegetable){
 
 
 
-PizzaPie.prototype.pizzaPieprice = function() {
+PizzaPie.prototype.pizzaPieprice = function(addOns) {
   return this.size + this.protein + this.vegetable;
 }
 

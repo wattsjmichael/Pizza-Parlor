@@ -1,0 +1,44 @@
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://3.bp.blogspot.com/-sREso8-qGaI/UEXzADrpq5I/AAAAAAAABVk/UZhJtiiqT6U/s1600/lunch-lady.jpg");
+  height: 500px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  color: white;
+
+}
+
+
+.form-group {
+  width: 50%;
+}
+
+.btn {
+  color: black;
+
+}
+
+.btn:hover{
+  background-color: red;
+  color: white;
+}
+
+#output {
+  display: none;
+  font-size: 35px;
+
+}
+
+#pizzaPrice {
+  font-size: 50px;
+}

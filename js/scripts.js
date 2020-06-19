@@ -1,4 +1,4 @@
-//Business Logic
+/*Business Logic
 function PizzaPie(vegetables, proteins, sizes){
   this.vegetables = vegetables;
   this.proteins = proteins;
@@ -6,6 +6,9 @@ function PizzaPie(vegetables, proteins, sizes){
   this.total = "";
 
 }
+
+
+
 
 PizzaPie.prototype.pizzaPiePrice = function() {
   return this.vegetables + this.proteins + this.sizes;
@@ -22,5 +25,11 @@ $(document).ready(function() {
     $("#output").show();
     $("#pizzaPrice").text(newPizzaPie.pizzaPiePrice());
   });
+});
+
+*/
+
+$("input[type=checkbox]:checked").each(function(index, checkbox){
+  newPizzaPie.addProtein(parseInt($(checkbox.val()), checkbox.name);
 
 });

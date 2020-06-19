@@ -1,9 +1,6 @@
-/*Business Logic
-function PizzaPie(vegetables, proteins, sizes){
-  this.vegetables = vegetables;
+//Business Logic
+function PizzaPie(proteins){
   this.proteins = proteins;
-  this.sizes = sizes;
-  this.total = "";
 
 }
 
@@ -11,25 +8,24 @@ function PizzaPie(vegetables, proteins, sizes){
 
 
 PizzaPie.prototype.pizzaPiePrice = function() {
-  return this.vegetables + this.proteins + this.sizes;
+  return this.proteins;
 }
 
 //User Interface Logic
 $(document).ready(function() {
   $("form#pizzaToppings").submit(function(event) {
     event.preventDefault();
-    let vegetable = parseInt($("#vegetables").val());
-    let protein = parseInt($("#proteins").val());
-    let size = parseInt($("#sizes").val());
-    let newPizzaPie = new PizzaPie(vegetables, proteins, sizes)
+    let proteins = parseInt("$#proteins option:selected").val();
+    let newPizzaPie = new PizzaPie(proteins)
     $("#output").show();
     $("#pizzaPrice").text(newPizzaPie.pizzaPiePrice());
   });
 });
 
-*/
 
-$("input[type=checkbox]:checked").each(function(index, checkbox){
-  newPizzaPie.addProtein(parseInt($(checkbox.val()), checkbox.name);
+
+
+$("input[type=checkbox]:checked").each(function(checkbox){
+  newPizzaPie.addProtein(parseInt($(checkbox).val()));
 
 });

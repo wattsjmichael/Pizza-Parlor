@@ -7,7 +7,7 @@
 ## Description of Pizza Parlor
 
 
-_{Behavior 1 : User input generates a number between 1 and 6, if number is 1, zero player turn score and end turn of player}_
+_{Behavior 1 : User Clicks on food items that creates value.}_
 
 * _User Input : Click "roll"_
 * _Expected output : If 1, pass turn, alert "player two; roll!"_

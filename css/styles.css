@@ -30,7 +30,7 @@
 
 .btn:hover{
   background-color: red;
-  color: white;
+  color: black;
 }
 
 #output {

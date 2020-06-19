@@ -1,31 +1,24 @@
-//Business Logic
-function PizzaPie(proteins){
-  this.proteins = proteins;
+function PizzaPie(size, protein, vegetable){
+  this.size = size;
+  this.protein = protein;
+  this.vegetable = vegetable;
+  this.price = "";
+}
 
+PizzaPie.prototype.pizzaPieprice = function() {
+  return this.size + this.protein + this.vegetable;
 }
 
 
-
-
-PizzaPie.prototype.pizzaPiePrice = function() {
-  return this.proteins;
-}
-
-//User Interface Logic
 $(document).ready(function() {
-  $("form#pizzaToppings").submit(function(event) {
+  $("form#pizzaPie").submit(function(event) {
     event.preventDefault();
-    let proteins = parseInt("$#proteins option:selected").val();
-    let newPizzaPie = new PizzaPie(proteins)
-    $("#output").show();
-    $("#pizzaPrice").text(newPizzaPie.pizzaPiePrice());
+      let size = parseInt($("#size").val());
+      let protein = parseInt($("#protein").val());
+      let vegetable = parseInt($("#vegetable").val());
+      let newPizzaPie = new PizzaPie(size, protein, vegetable);
+      $("#output").show();
+      $("#pizzaPrice").text(newPizzaPie.pizzaPieprice());
+
   });
-});
-
-
-
-
-$("input[type=checkbox]:checked").each(function(checkbox){
-  newPizzaPie.addProtein(parseInt($(checkbox).val()));
-
 });

@@ -10,18 +10,36 @@
   <title>Pizza Parlor</title>
 </head>
 <body>
-  <form id="pizzaToppings">
-    <h2>Proteins</h2>
-    <div id="proteins">
-      <input type ="checkbox" id="pep" price="3" />
-      <label for="pepperoni">Pepperoni</label>
-      <br>
-      <input type ="checkbox" id="sausage" price="5" />
-      <label for="sausage">Sausage</label>
-      <br>
-    </div>
-    <div id="output">
-      <p>Your Total For Today is $<span id="pizzaPrice"></span></p>
-    </div>
+  <form id="pizzaPie">
+    <h1>Welcome to Sloppy Joe's Pizzeria</h1>
+      <p>Select your size of pizza</p>
+        <select class="form-control" id="size">
+          <option value="2">Tiny</option>
+          <option value="3">Medium</option>
+          <option value="5">It's too big!</option>
+        </select>
+        <br>
+        <br>
+      <p>What meat do yah want?</p>
+        <select class="form-control" id="protein">
+          <option value="1">Mystery Meat</option>
+          <option value="3">Pepperoni</option>
+          <option value="10">Kobe Beef</option>
+        </select>
+        <br>
+        <br>
+      <p>You like Veggies?</p>
+        <select class="form-control" id="vegetable">
+          <option value="1">Green Stuff</option>
+          <option value="2">Mushrooms</option>
+          <option value="3">Onions</option>
+          <option value="5">Peppers</option>
+        </select>
+        <br>
+        <button class="submit" type="btn">Tell me what you want</button>
+  </form>
+  <div id="output">
+    <p>Give me! $<span id ="pizzaPrice"> NOW SCRAM!</p>
+  </div>
 </body>
 </html>

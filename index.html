@@ -1,32 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/scripts.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pizza Parlor</title>
 </head>
 <body>
-  <h2>Proteins</h2>
-  <table id="meats">
-    <tr>
-      <td><input id ="pep" type="checkbox" value="5"/><label for="pep">Pepperoni</label></td>
-    </tr>
-    <tr>
-      <td><input id ="pep" type="checkbox" value="5"/><label for="pep">Pepperoni</label></td>
-    </tr>
-    <tr>
-      <td><input id ="pep" type="checkbox" value="5"/><label for="pep">Pepperoni</label></td>
-    </tr>
-    <tr>
-      <td><input id ="pep" type="checkbox" value="5"/><label for="pep">Pepperoni</label></td>
-    </tr>
-    <tr>
-      <td><input id ="pep" type="checkbox" value="5"/><label for="pep">Pepperoni</label></td>
-    </tr>
-    </table>
-    <br>
-    <h2>Vegetables</h2>
-    <table id="Vegetables">
+  <form id="pizzaToppings">
+    <h2>Proteins</h2>
+    <table id="proteins">
       <tr>
         <td><input id ="pep" type="checkbox" value="5"/><label for="pep">Pepperoni</label></td>
       </tr>
@@ -43,8 +29,27 @@
         <td><input id ="pep" type="checkbox" value="5"/><label for="pep">Pepperoni</label></td>
       </tr>
       </table>
-    <h2>Sizes</h2>
-    <table id="Sizes">
+      <br>
+      <h2>Vegetables</h2>
+      <table id="vegetables">
+      <tr>
+        <td><input id ="pep" type="checkbox" value="5"/><label for="pep">Pepperoni</label></td>
+      </tr>
+      <tr>
+        <td><input id ="pep" type="checkbox" value="5"/><label for="pep">Pepperoni</label></td>
+      </tr>
+      <tr>
+        <td><input id ="pep" type="checkbox" value="5"/><label for="pep">Pepperoni</label></td>
+      </tr>
+      <tr>
+        <td><input id ="pep" type="checkbox" value="5"/><label for="pep">Pepperoni</label></td>
+      </tr>
+      <tr>
+        <td><input id ="pep" type="checkbox" value="5"/><label for="pep">Pepperoni</label></td>
+      </tr>
+      </table>
+      <h2>Sizes</h2>
+      <table id="sizes">
       <tr>
         <td><input id ="small" type="checkbox" value="3"/><label for="small">small</label></td>
       </tr>
@@ -55,6 +60,9 @@
         <td><input id ="large" type="checkbox" value="5"/><label for="large">large</label></td>
       </tr>
     </table>
-    <input type="button" value="Order" onclick="getOrder()">
+    <button class ="submit" type="button">Order your pizza!</button>
+    <div id="output">You Total for your pizza is <span id= pizzaPrice></span></p>
+    </div>
+  </form>
 </body>
 </html>
